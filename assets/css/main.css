@@ -56,7 +56,6 @@
 	}
 
 /* Basic */
-
 	body, input, select, textarea {
 		color: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -112,6 +111,13 @@
 		.icon > .label {
 			display: none;
 		}
+
+		.profile{				/*Circular Profile*/
+	 		border-radius: 50%;
+	 		width: 200px;
+			height: 200px;
+
+ }
 
 /* Wrapper */
 
