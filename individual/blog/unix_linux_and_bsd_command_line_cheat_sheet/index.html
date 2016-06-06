@@ -1,0 +1,407 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Unix, Linux, and BSD: Command Line Cheat Sheet</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d34201be84">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="c1b3rh4ck's /dev/null">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Unix, Linux, and BSD: Command Line Cheat Sheet">
+    <meta property="og:description" content="The following command line cheat sheet for Unix, Linux, and BSD systems is from my new book  (available now a Amazon.com).  *Help Commands  *  man - Online manual  whatis - Displays manual descriptions  File and Directory Commands  ls - Lists directory contents  pwd - Prints the current directory  cd -">
+    <meta property="og:url" content="http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/">
+    <meta property="article:published_time" content="2011-01-07T19:16:00.000Z">
+    <meta property="article:modified_time" content="2011-09-07T17:41:08.586Z">
+    <meta property="article:tag" content="Unix">
+    <meta property="article:tag" content="Linux">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Unix, Linux, and BSD: Command Line Cheat Sheet">
+    <meta name="twitter:description" content="The following command line cheat sheet for Unix, Linux, and BSD systems is from my new book  (available now a Amazon.com).  *Help Commands  *  man - Online manual  whatis - Displays manual descriptions  File and Directory Commands  ls - Lists directory contents  pwd - Prints the current directory  cd -">
+    <meta name="twitter:url" content="http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="h3ct0rJs">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Unix, Linux">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "c1b3rh4ck&#x27;s /dev/null",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "h3ct0rJs",
+        "image": "//www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/h3ct0rjs/",
+        "sameAs": []
+    },
+    "headline": "Unix, Linux, and BSD: Command Line Cheat Sheet",
+    "url": "http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/",
+    "datePublished": "2011-01-07T19:16:00.000Z",
+    "dateModified": "2011-09-07T17:41:08.586Z",
+    "keywords": "Unix, Linux",
+    "description": "The following command line cheat sheet for Unix, Linux, and BSD systems is from my new book  (available now a Amazon.com).  *Help Commands  *  man - Online manual  whatis - Displays manual descriptions  File and Directory Commands  ls - Lists directory contents  pwd - Prints the current directory  cd -"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="c1b3rh4ck's /dev/null" href="../rss/index.html">
+</head>
+<body class="post-template tag-unix tag-linux nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-unix tag-linux">
+
+        <header class="post-header">
+            <h1 class="post-title">Unix, Linux, and BSD: Command Line Cheat Sheet</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2011-01-07">07 January 2011</time>  on <a href="../tag/unix/">Unix</a>, <a href="../tag/linux/">Linux</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>The following command line cheat sheet for Unix, Linux, and BSD systems is from my new book  (available now a Amazon.com). </p>
+
+<p><em>*Help Commands 
+*</em> 
+man - Online manual <br>
+whatis - Displays manual descriptions </p>
+
+<p><strong>File and Directory Commands</strong> </p>
+
+<p>ls - Lists directory contents <br>
+pwd - Prints the current directory <br>
+cd - Change directories <br>
+mv - Move files <br>
+cp - Copy files <br>
+rm - Delete files <br>
+mkdir - Create directories <br>
+rmdir - Remove directories <br>
+find - Search for files (slow) <br>
+locate - Search for files (faster) <br>
+whereis - Display binary file location <br>
+which - Display binary file location <br>
+file - Display file type <br>
+size - Display file size <br>
+stat - Display file statistics <br>
+fuser - Identify open files <br>
+touch - Update file timestamps <br>
+lsof - List open files <br>
+cksum - Calculate checksum <br>
+md5sum - Calculate md5sum <br>
+ln - Create a link <br>
+alias - Display/edit command aliases <br>
+gzip - Compress files <br>
+gunzip - Uncompress files <br>
+shred - Securely delete files <br>
+head - Display the head of a file <br>
+tail - Display the tail of a file <br>
+tee - Display and redirect output <br>
+sort - Sort input files/streams <br>
+grep - Display matching results <br>
+tree - Display directory tree <br>
+more - Display files one page at a time <br>
+less - Display files one page at a time <br>
+wc - Count words/lines/letters <br>
+cat - Display files <br>
+zcat - Display compressed files <br>
+diff - Show differences between files <br>
+strings - Display printable characters <br>
+sed - Text editing utility <br>
+awk - Text processing utility <br>
+dos2unix - Convert DOS files to Unix <br>
+unix2dos - Convert Unix files to DOS </p>
+
+<p><strong>Editors</strong> </p>
+
+<p>nano - Simple text editor <br>
+vi - Advanced text editor <br>
+emacs - Ultimate text editor </p>
+
+<p><strong>Other Utilities</strong> </p>
+
+<p>clear - Clear terminal screen <br>
+date - Display the date <br>
+cal - Display a calendar <br>
+watch - Monitor a command <br>
+env - Display environment variables <br>
+history - Display command history <br>
+logout - Logout of the shell <br>
+exit - Exit the shell </p>
+
+<p><strong>Users and Groups</strong> </p>
+
+<p>su - Switch user <br>
+sudo - Run a program as another user <br>
+id - Display user identity <br>
+ulimit - Display user limits <br>
+who - Display who is logged in <br>
+w - Display what users are doing <br>
+users - Display active user accounts <br>
+last - Display last user logins <br>
+lastlog - Display all user’s last login <br>
+wall - Send a message to all users <br>
+whoami - Display current user id <br>
+finger - Display information about a user <br>
+chown - Change file/directory ownership <br>
+chgrp - Change file/directory group <br>
+chmod - Change file/directory permissions <br>
+umask - Display or set umask settings <br>
+passwd - Set/change password <br>
+useradd - Create user accounts <br>
+userdel - Delete user accounts <br>
+usermod - Modify user accounts <br>
+groupadd - Create group accounts <br>
+groupdel - Delete group accounts <br>
+groupmod - Modify group accounts </p>
+
+<p><strong>Process Control</strong> </p>
+
+<p>ps - Display running processes <br>
+pgrep - Search for running processes <br>
+pidof - Search for PID by name <br>
+pstree - Displays process in tree view <br>
+kill - Terminate a process by PID <br>
+killall - Terminal a process by name <br>
+nice - Run a program with a modified priority <br>
+renice - Adjust a program's priority <br>
+nohup - Run a program immune to hang-ups <br>
+&amp; - Run a program in the background 
+bg - Move a job to the background <br>
+jobs - Display running jobs <br>
+fg - Move a job to the foreground </p>
+
+<p><strong>Startup and Shutdown</strong> </p>
+
+<p>shutdown - Shutdown the computer <br>
+poweroff - Poweroff the computer <br>
+halt - Halt the computer <br>
+runlevel - Display the current runlevel <br>
+telinit - Change runlevel <br>
+service - Stop and stop services <br>
+sysv-rc-conf - Runlevel configuration editor <br>
+update-rc.d - Debian runlevel editor <br>
+chkconfig - Red Hat runlevel editor <br>
+rc-update - Gentoo runlevel editor <br>
+rc-status - Gentoo service monitor </p>
+
+<p><strong>Networking Commands</strong> </p>
+
+<p>hostname - Display the system hostname <br>
+domainname - Display the system domain <br>
+ifconfig - Manage network interfaces <br>
+ifup - Start network interfaces <br>
+ifdown - Stop network interfaces <br>
+iwconfig - Manage wireless interfaces <br>
+iwlist - Display wireless information <br>
+ethtool - Display network card info <br>
+arp - Display the ARP cache <br>
+ping - Send ICMP echo requests <br>
+traceroute - Trace network paths <br>
+tracepath - Trace network paths <br>
+nslookup - Query DNS servers <br>
+dig - Query DNS servers <br>
+host - Query DNS servers <br>
+whois - Query the whois database <br>
+dhclient - Linux DHCP client <br>
+netstat - Display network status <br>
+route - Manage network routes <br>
+tcpdump - Capture network packets <br>
+nmap - Scan remote computers <br>
+wavemon - Monitor wireless connections <br>
+smbtree - Display SMB servers/shares <br>
+nmblookup - Look up NetBIOS information <br>
+mount - Mount file systems <br>
+showmount - Show mounted file systems <br>
+umount - Unmount file systems <br>
+ssh - SSH client <br>
+telnet - Telnet client <br>
+ftp - FTP client <br>
+ncftp - Scriptable FTP client <br>
+mail - Email client <br>
+rsync - Rsync client </p>
+
+<p><strong>Hardware Commands</strong> </p>
+
+<p>lspci - List PCI devices <br>
+pcidump - List PCI devices <br>
+lsusb - List USB devices <br>
+lshw - List hardware devices <br>
+lspcmcia - List PCMCIA devices <br>
+lshal - Display all system hardware <br>
+hdparm - Configure hard drives <br>
+eject - Eject removable media </p>
+
+<p><strong>Scheduling</strong> </p>
+
+<p>batch - Run processes when the CPU is free <br>
+at - Run processes at a specific time <br>
+atq - Display the at queue <br>
+atrm - Remove jobs from the at queue <br>
+crontab - Display/edit cron jobs </p>
+
+<p><strong>File System Commands</strong> </p>
+
+<p>fdisk - Partition editor <br>
+parted - Partition editor <br>
+mkfs - Create file systems <br>
+fsck - Check file systems <br>
+mkswap - Create swap space <br>
+swapon - Activate swap space <br>
+swapoff - Deactivate swap space <br>
+sync - Flush disk cache </p>
+
+<p><strong>Backup Commands</strong> </p>
+
+<p>tar - Archive utility <br>
+dd - File copy utility <br>
+dump - Incremental backup utility <br>
+restore - Restore dump backups <br>
+mt - Tape device utility <br>
+cpio - Archive utility </p>
+
+<p><strong>Monitoring Commands</strong> </p>
+
+<p>top - Performance monitor <br>
+mpstat - Performance monitor <br>
+vmstat - Virtual memory monitor <br>
+iostat - I/O performance monitor <br>
+nfsstat - NFS performance monitor <br>
+free - Display memory usage <br>
+df - Display disk usage <br>
+du - Display disk usage <br>
+uname - Display system information <br>
+uptime - Display system uptime <br>
+lsmod - List kernel modules <br>
+modinfo - Display module information <br>
+dmesg - Display kernel messages <br>
+strace - System trace debugger <br>
+ltrace -Library trace debugger <br>
+ipcs - IPC monitor <br>
+sysctl - Configure kernel parameters </p>
+
+<p><strong>Printing Commands</strong> </p>
+
+<p>lp - Print files <br>
+lpstat - Display printer status <br>
+lpq - Display print queue <br>
+lprm - Remove print jobs <br>
+cancel - Cancel print jobs <br>
+enable - Enable a printer <br>
+disable - Disable a printer </p>
+
+<p><strong>Software Commands</strong> </p>
+
+<p>dpkg - Debian package manager <br>
+apt-get - Debian package utility <br>
+rpm - Red Hat package manager <br>
+yum - Red Hat package utility <br>
+emerge - Gentoo package utility <br>
+pkg<em>add - BSD installation utility <br>
+pkg</em>delete - BSD uninstallation utility <br>
+<a href="http://www.amazon.com/Introduction-Command-Line-Second-Commands/dp/1450588301/ref=sr_1_2?s=books&amp;ie=UTF8&amp;qid=1283376367&amp;sr=1-2">Introduction to the Command Line</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/h3ct0rjs/" style="background-image: url(http://www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s&amp;)"><span class="hidden">h3ct0rJs's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/h3ct0rjs/">h3ct0rJs</a></h4>
+
+                    <p>Read <a href="../author/h3ct0rjs/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Unix%2C%20Linux%2C%20and%20BSD%3A%20Command%20Line%20Cheat%20Sheet&amp;url=http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/unix_linux_and_bsd_command_line_cheat_sheet/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../free_shell_accounts/">
+        <section class="post">
+            <h2>Free Shell Accounts</h2>
+            <p>Durante esta semana me la e pasado buscando servidores que me permite interactuar con diferentes sistemas operativos y llevar…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">c1b3rh4ck's /dev/null</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d34201be84"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d34201be84"></script>
+
+</body>

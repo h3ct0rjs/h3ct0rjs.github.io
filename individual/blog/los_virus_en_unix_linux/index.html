@@ -1,0 +1,197 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Los virus en Unix/Linux</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d34201be84">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="c1b3rh4ck's /dev/null">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Los virus en Unix/Linux">
+    <meta property="og:description" content='Es comun escuchar entre charlas de Informáticos el lio con los virus  sobre  Unix/Linux,pero  lo mas comun que escuchamos  quizas pueda ser :  *"No tenemos virus,estamos completamente libres "  *"Tienes Antivirus...Para que ?"  *"Quizas tenga eso virus ejecutables,pero son de windows...que pasa con las maquinas que  quizas'>
+    <meta property="og:url" content="http://localhost:2368/los_virus_en_unix_linux/">
+    <meta property="article:published_time" content="2011-09-11T19:02:00.002Z">
+    <meta property="article:modified_time" content="2011-09-11T19:05:05.617Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Los virus en Unix/Linux">
+    <meta name="twitter:description" content='Es comun escuchar entre charlas de Informáticos el lio con los virus  sobre  Unix/Linux,pero  lo mas comun que escuchamos  quizas pueda ser :  *"No tenemos virus,estamos completamente libres "  *"Tienes Antivirus...Para que ?"  *"Quizas tenga eso virus ejecutables,pero son de windows...que pasa con las maquinas que  quizas'>
+    <meta name="twitter:url" content="http://localhost:2368/los_virus_en_unix_linux/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="h3ct0rJs">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "c1b3rh4ck&#x27;s /dev/null",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "h3ct0rJs",
+        "image": "//www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/h3ct0rjs/",
+        "sameAs": []
+    },
+    "headline": "Los virus en Unix/Linux",
+    "url": "http://localhost:2368/los_virus_en_unix_linux/",
+    "datePublished": "2011-09-11T19:02:00.002Z",
+    "dateModified": "2011-09-11T19:05:05.617Z",
+    "description": "Es comun escuchar entre charlas de Informáticos el lio con los virus  sobre  Unix/Linux,pero  lo mas comun que escuchamos  quizas pueda ser :  *&quot;No tenemos virus,estamos completamente libres &quot;  *&quot;Tienes Antivirus...Para que ?&quot;  *&quot;Quizas tenga eso virus ejecutables,pero son de windows...que pasa con las maquinas que  quizas"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="c1b3rh4ck's /dev/null" href="../rss/index.html">
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Los virus en Unix/Linux</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2011-09-11">11 September 2011</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p><a href="http://2.bp.blogspot.com/-xzftFzSIuVA/Tm0GT6h3VGI/AAAAAAAAAYw/AVGG2NnBo5E/s1600/malwares-troyanos.jpg"><img src="http://2.bp.blogspot.com/-xzftFzSIuVA/Tm0GT6h3VGI/AAAAAAAAAYw/AVGG2NnBo5E/s200/malwares-troyanos.jpg" alt="" title=""></a> </p>
+
+<p>Es comun escuchar entre charlas de Informáticos el lio con los virus  sobre  Unix/Linux,pero  lo mas comun que escuchamos  quizas pueda ser : </p>
+
+<p>*"No tenemos virus,estamos completamente libres " 
+*"Tienes Antivirus...Para que ?" 
+*"Quizas tenga eso virus ejecutables,pero son de windows...que pasa con las maquinas que  quizas esten en tu red,un servidor samba!!! " </p>
+
+<p>Si hay algo que es muy cierto es que  en Unix /Linux  la administración de procesos y la identificación de malware es quizas mucho mas sencilla puesto que los procesos  son mas transparentes al usuario,esta cuestion depende tambien del expertise  y  habilidades tecnicas de cada uno,asi que la mayoria de los que usamos esta plataforma no nos encontramos exentos de los riesgos de infección.Algunos de los tipos de infeccion que podriamos encontrar seria de Tipo : <br>
+Elf <br>
+ShellScripts ...entre otros quizas este video sea mas claro </p>
+
+<p><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/DCpKwLqbWLo/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/DCpKwLqbWLo&amp;fs=1&amp;source=uds"> <param name="bgcolor" value="#FFFFFF"> <embed width="320" height="266" src="http://www.youtube.com/v/DCpKwLqbWLo&amp;fs=1&amp;source=uds" type="application/x-shockwave-flash"></embed></object> </p>
+
+<p>Quizas podria Interesarte: </p>
+
+<h1 id="unixelfparasitesandvirus">Unix ELF parasites and virus</h1>
+
+<p>Asi que tomar algunas medidas de prevención  no estaría mal, podrias usar herramientas tales como : <br>
+*Clamav,u otro antivirus de mercado como avast,eset,...etc 
+*TigerSecurity Auditor 
+*Chkrootkit 
+*CheckSecurity 
+*Lynis 
+*logcheck 
+*Selinux o Bastille </p>
+
+<p>que minimizaran el impacto de una infección u otro problema,aprender a usar cada herramienta y optimizar las tareas en el sistema también es una tarea vital que requiere paciencia y tiempo. </p>
+
+<p><a href="http://vxheavens.com/lib/vsc01.html">http://vxheavens.com/lib/vsc01.html</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/h3ct0rjs/" style="background-image: url(http://www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s&amp;)"><span class="hidden">h3ct0rJs's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/h3ct0rjs/">h3ct0rJs</a></h4>
+
+                    <p>Read <a href="../author/h3ct0rjs/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Los%20virus%20en%20Unix%2FLinux&amp;url=http://localhost:2368/los_virus_en_unix_linux/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/los_virus_en_unix_linux/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/los_virus_en_unix_linux/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="http://localhost:2368/chrome_y_sus_configuraciones/">
+        <section class="post">
+            <h2>Chrome y Sus configuraciones</h2>
+            <p>Quizas para algunos chrome o chromium sean uno de los navegadores mas usados hoy os pretendo mostrar quizas algunas…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../nse_another_good_videos_d/">
+        <section class="post">
+            <h2>NSE:Another good Videos :-D</h2>
+            <p>Hi,recently i was searching for anothers videos and resources and i found this good videos ! from the good…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">c1b3rh4ck's /dev/null</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d34201be84"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d34201be84"></script>
+
+</body>

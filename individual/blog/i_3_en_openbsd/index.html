@@ -1,0 +1,240 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>i3 en Openbsd</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d34201be84">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="c1b3rh4ck's /dev/null">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="i3 en Openbsd">
+    <meta property="og:description" content="Durante esta semana un compañero de estudio me a pedido que organize su sistema,diciendo que simplemente era para hacer una instalacion de Openbsd y Organizar los servicios comunes para desarrollar web(Servidor Apache+Mysql..)yo creyendo en pablo decidio hoy martes ir a su casa a revisar y hacerle">
+    <meta property="og:url" content="http://localhost:2368/i_3_en_openbsd/">
+    <meta property="article:published_time" content="2011-05-04T03:25:00.000Z">
+    <meta property="article:modified_time" content="2011-09-07T17:41:09.477Z">
+    <meta property="article:tag" content="Unix">
+    <meta property="article:tag" content="Hacking">
+    <meta property="article:tag" content="Open Bsd">
+    <meta property="article:tag" content="Openbsd">
+    <meta property="article:tag" content="Scripts">
+    <meta property="article:tag" content="I3">
+    <meta property="article:tag" content="C1b3rh4ck">
+    <meta property="article:tag" content="Wmmi">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="i3 en Openbsd">
+    <meta name="twitter:description" content="Durante esta semana un compañero de estudio me a pedido que organize su sistema,diciendo que simplemente era para hacer una instalacion de Openbsd y Organizar los servicios comunes para desarrollar web(Servidor Apache+Mysql..)yo creyendo en pablo decidio hoy martes ir a su casa a revisar y hacerle">
+    <meta name="twitter:url" content="http://localhost:2368/i_3_en_openbsd/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="h3ct0rJs">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Unix, Hacking, Open Bsd, Openbsd, Scripts, I3, C1b3rh4ck, Wmmi">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "c1b3rh4ck&#x27;s /dev/null",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "h3ct0rJs",
+        "image": "//www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/h3ct0rjs/",
+        "sameAs": []
+    },
+    "headline": "i3 en Openbsd",
+    "url": "http://localhost:2368/i_3_en_openbsd/",
+    "datePublished": "2011-05-04T03:25:00.000Z",
+    "dateModified": "2011-09-07T17:41:09.477Z",
+    "keywords": "Unix, Hacking, Open Bsd, Openbsd, Scripts, I3, C1b3rh4ck, Wmmi",
+    "description": "Durante esta semana un compañero de estudio me a pedido que organize su sistema,diciendo que simplemente era para hacer una instalacion de Openbsd y Organizar los servicios comunes para desarrollar web(Servidor Apache+Mysql..)yo creyendo en pablo decidio hoy martes ir a su casa a revisar y hacerle"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="c1b3rh4ck's /dev/null" href="../rss/index.html">
+</head>
+<body class="post-template tag-unix tag-hacking tag-open_bsd tag-openbsd tag-scripts tag-i3 tag-c1_b_3_rh_4_ck tag-wmmi nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-unix tag-hacking tag-open_bsd tag-openbsd tag-scripts tag-i3 tag-c1_b_3_rh_4_ck tag-wmmi">
+
+        <header class="post-header">
+            <h1 class="post-title">i3 en Openbsd</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2011-05-03">03 May 2011</time>  on <a href="../tag/unix/">Unix</a>, <a href="../tag/hacking/">Hacking</a>, <a href="../tag/open_bsd/">Open Bsd</a>, <a href="../tag/openbsd/">Openbsd</a>, <a href="../tag/scripts/">Scripts</a>, <a href="../tag/i3/">I3</a>, <a href="../tag/c1_b_3_rh_4_ck/">C1b3rh4ck</a>, <a href="../tag/wmmi/">Wmmi</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Durante esta semana un compañero de estudio me a pedido que organize su sistema,diciendo que simplemente era para hacer una instalacion de Openbsd y Organizar los servicios comunes para desarrollar web(Servidor Apache+Mysql..)yo creyendo en pablo decidio hoy martes ir a su casa a revisar y hacerle el favor de una vez.Cuando el me dijo realmente parecia sencillo y era realizar configuraciones de rutina: </p>
+
+<ul>
+<li><p>Configuracion de Usuarios</p></li>
+<li><p>Configuracion Packet Filter</p></li>
+<li><p>Configuracion de Apps</p></li>
+<li><p>Configuracion Grsecurity (Aunque ya no tan necesario)</p></li>
+<li><p>Configuracion de X11</p></li>
+<li><p>SSH</p></li>
+<li><p>Pkg</p></li>
+</ul>
+
+<p>entre otras tareitas que quizas cualquiera con capacidad lectora pudiece ;-D hacerlo Llegando a su casa me encuentro con esta sorpresa : </p>
+
+<p><a href="http://c1b3rh4ck.files.wordpress.com/2011/05/290561375.jpg"><img src="http://c1b3rh4ck.files.wordpress.com/2011/05/290561375.jpg?w=150" alt="" title="290561375"></a></p>
+
+<p>Dentro de mi (Realmente este man tiene excelentes maquinas :-( ),en fin comence y me di a la tarea de configurar y organizar toda el particionado de los 8 Tb que me habia  dejando para la tarea, un disco de un 1 Tb por aparte para la instalacion de dos linux,quedando asi lo que organize : </p>
+
+<ul>
+<li>Power Edge :OpenBsd 4.9 </li>
+</ul>
+
+<p>Torre Tower Multiple : particion /var/log </p>
+
+<p>Y dos Desktops normales :Otros linux </p>
+
+<p>Y algunos otros discos sin particionar</p>
+
+<p>La cuestion es que todo tenia que verse en dos monitores lo cual no sabia hacer asi que encontre este articulo <br>
+muy interesante por cierto. </p>
+
+<p>Realizando todo con normalidad me tope con un problema con el pkg y era que no salia internet ....habiendo olvidado reiniciar decidi hacerlo por que parecia un error en  un archivo en perl </p>
+
+<blockquote>
+  
+</blockquote>
+
+<pre>/usr/libdata/perl5/site_perl/i386-openbsd/rpc/types.ph</pre>
+
+<pre>quedandome con la duda ?.ahora si simplemente haciendo : 
+#echo 'export PKG_PAHT=ftp://ftp.openbsd.org/pub/OpenBSD/4.9/packages/xx/'&gt;&gt; ~.profile 
+me quite el problema de estar exportando la ruta de los paquetes asi cada vez que reinicie no voy a tener  
+ese problema 
+instalando I3 
+Para los que no sepais que es I3 dejo su definicion :</pre>
+
+<blockquote>
+  <p>i3 is a tiling window manager, completely written from scratch. </p>
+  
+  <p>i3 was created because wmii, our favorite window manager at the time, didn’t provide some features we wanted (multi-monitor done right, for example), had some bugs, didn’t progress since quite some time and wasn’t easy to hack at all (source code comments/documentation completely lacking). Still, we think the wmii developers and contributors did a great job. Thank you for inspiring us to create i3. </p>
+  
+  <p>Please be aware that i3 is primarily targeted at advanced users and developers.</p>
+</blockquote>
+
+<p>Lo primero que se hace es descargar el packete ya sea desde los ports o paquetes en este caso : </p>
+
+<h1 id="pkg_check">pkg_check</h1>
+
+<h1 id="pkg_addi3">pkg_add i3</h1>
+
+<p><a href="http://www.ibm.com/developerworks/library/os-mltihed/" title="http://www.ibm.com/developerworks/library/os-mltihed/ ">http://www.ibm.com/developerworks/library/os-mltihed/</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/h3ct0rjs/" style="background-image: url(http://www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s&amp;)"><span class="hidden">h3ct0rJs's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/h3ct0rjs/">h3ct0rJs</a></h4>
+
+                    <p>Read <a href="../author/h3ct0rjs/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=i3%20en%20Openbsd&amp;url=http://localhost:2368/i_3_en_openbsd/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/i_3_en_openbsd/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/i_3_en_openbsd/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../vulnerabilidades_de_seguridad/">
+        <section class="post">
+            <h2>Vulnerabilidades de Seguridad</h2>
+            <p>Antes ya habiamos  aqui un post hecho por G0tm1lk,En el cual se hacia un listado de algunas herramientas…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../gamification_of_information_security_pauldotcom_mailist/">
+        <section class="post">
+            <h2>Gamification of Information Security ...Pauldotcom(mailist )</h2>
+            <p>Gamification has been the buzz for the past few years. Game design concepts are appearing in everyday interactions like…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">c1b3rh4ck's /dev/null</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d34201be84"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d34201be84"></script>
+
+</body>

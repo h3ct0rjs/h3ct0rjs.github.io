@@ -1,0 +1,340 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Vulnerable by Design by g0tm1lk blog's</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d34201be84">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="c1b3rh4ck's /dev/null">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vulnerable by Design by g0tm1lk blog's">
+    <meta property="og:description" content='Hi again folks,reading my feeds i found a interesting post with the most important enviroments for practice your skills hacking, i wait that you like :    Pentest lab. "Hacker" training. Deliberately insecure applications challenge thingys.Call it what you will, but what happens when you want to try out your'>
+    <meta property="og:url" content="http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/">
+    <meta property="article:published_time" content="2011-03-20T15:56:00.000Z">
+    <meta property="article:modified_time" content="2012-01-12T00:34:39.974Z">
+    <meta property="article:tag" content="Hacking">
+    <meta property="article:tag" content="Enviroment">
+    <meta property="article:tag" content="Vulnerable">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vulnerable by Design by g0tm1lk blog's">
+    <meta name="twitter:description" content='Hi again folks,reading my feeds i found a interesting post with the most important enviroments for practice your skills hacking, i wait that you like :    Pentest lab. "Hacker" training. Deliberately insecure applications challenge thingys.Call it what you will, but what happens when you want to try out your'>
+    <meta name="twitter:url" content="http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="h3ct0rJs">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Hacking, Enviroment, Vulnerable">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "c1b3rh4ck&#x27;s /dev/null",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "h3ct0rJs",
+        "image": "//www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/h3ct0rjs/",
+        "sameAs": []
+    },
+    "headline": "Vulnerable by Design by g0tm1lk blog&#x27;s",
+    "url": "http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/",
+    "datePublished": "2011-03-20T15:56:00.000Z",
+    "dateModified": "2012-01-12T00:34:39.974Z",
+    "keywords": "Hacking, Enviroment, Vulnerable",
+    "description": "Hi again folks,reading my feeds i found a interesting post with the most important enviroments for practice your skills hacking, i wait that you like :    Pentest lab. &quot;Hacker&quot; training. Deliberately insecure applications challenge thingys.Call it what you will, but what happens when you want to try out your"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="c1b3rh4ck's /dev/null" href="../rss/index.html">
+</head>
+<body class="post-template tag-hacking tag-enviroment tag-vulnerable nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-hacking tag-enviroment tag-vulnerable">
+
+        <header class="post-header">
+            <h1 class="post-title">Vulnerable by Design by g0tm1lk blog's</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2011-03-20">20 March 2011</time>  on <a href="../tag/hacking/">Hacking</a>, <a href="../tag/enviroment/">Enviroment</a>, <a href="../tag/vulnerable/">Vulnerable</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Hi again folks,reading my feeds i found a interesting post with the most important enviroments for practice your skills hacking, i wait that you like : </p>
+
+<blockquote>
+  <p>Pentest lab. "Hacker" training. Deliberately insecure applications challenge thingys.Call it what you will, but what happens when you want to try out your new set of skills? Do you want to be compare results from a tool when it's used in different environments? What if you want to explore a system <em>(that is legal to do so!)</em> that you have no knowledge about <em>(because you didn't set it up!)</em>... 
+  If any of that sounds helpful, below is a small collection of different environments, so if you want to go from "boot to root", "capture the flag" or just to dig around as much as you want to try out the odd thing here and there. These will allow you to do so and without getting in trouble for doing it! 
+  The idea isn't to cheat, the aim is to learn a thing or two ;)I'm sure there are a lot more out there, if you want to recommend any others - please so do! =)<strong>Complete Operating System</strong>. The idea of going from boot to root via any which way you can. Most of them have multiple entry points (some are easier than others) so you can keep using it ;)  They are all Linux OS (either in ISO or VM form) with vulnerable/configured software installed. (If you haven't got any VM software, is free and will do the trick) 
+  <strong>(Offline) Web based</strong>. Most of them you'll need to download, copy and load the files yourself on your own web server (if you haven't already got one,  is great). A few of them are VM images that can be loaded in to Virtual machines as they come with all the software &amp; settings needed. 
+  <strong>(Online) Web based</strong>. Same as above, however if you don't want the hassle of setting it all up or to be able to do it where ever you have a Internet connection... 
+  <strong>Complete Operating System<em>*</em></strong>Name<strong>: Damn Vulnerable Linux</strong>Homepage<strong>:  
+  *Brief description</strong>: <em>Damn Vulnerable Linux (DVL) is everything a good Linux distribution isn’t. Its developers have spent hours stuffing it with broken, ill-configured, outdated, and exploitable software that makes it vulnerable to attacks. DVL isn’t built to run on your desktop – it’s a learning tool for security students.</em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: De-ICE<strong>Homepage</strong>:  or  
+  <strong>Brief description</strong>: <em>The PenTest LiveCDs are the creation of Thomas Wilhelm, who was transferred to a penetration test team at the company he worked for. Needing to learn as much about penetration testing as quickly as possible, Thomas began looking for both tools and targets. He found a number of tools, but no usable targets to practice against. Eventually, in an attempt to narrow the learning gap, Thomas created PenTest scenarios using LiveCDs.</em> 
+  <strong>Version/Levels</strong>: , ,  
+  <strong>Support/Walk-through</strong>: , ,  , ,  
+  <strong>Name</strong>: Holynix<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Holynix is a Linux distribution that was deliberately built to have security holes for the purposes of penetration testing.</em> 
+  <strong>Version/Levels</strong>:2 
+  <strong>Support/Walk-through</strong>: ,  
+  <strong>Name</strong>: Kioptrix<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>This Kioptrix VM Image are easy challenges. The object of the game is to acquire 
+  root access via any means possible (except actually hacking the VM server or player). 
+  The purpose of these games are to learn the basic tools and techniques in vulnerability 
+  assessment and exploitation. There are more ways then one to successfully complete the challenges.</em> 
+  <strong>Version/Levels</strong>: 2 
+  <strong>Support/Walk-through</strong>: , ,  
+  <strong>Name</strong>: Metasploitable<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>One of the questions that we often hear is "What systems can i use to test against?" Based on this, we thought it would be a good idea throw together an exploitable VM that you can use for testing purposes.</em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>: , , , , ,  
+  <strong>Name</strong>: NETinVM<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>NETinVM is a single  virtual machine image that contains, ready to run, a series of (UML) virtual machines which, when started, conform a whole computer network inside the virtual machine. Hence the name NETinVM, an acronym for _NETwork in Virtual Machine</em><a href="http://www.vmware.com/">VMware</a>_ 
+  <strong>Version/Levels</strong>: 3 (2010-12-01) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: pWnOS<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>It's a linux virtual machine intentionally configured with exploitable services to provide you with a path to r00t. :) Currently, the virtual machine NIC is configured in bridged networking, so it will obtain a normal IP address on the network you are connected to. You can easily change this to NAT or Host Only if you desire. A quick ping sweep will show the IP address of the virtual machine.</em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>: ,  
+  <strong>(Offline) Web Based<em>*</em></strong>Name<strong>: BadStore</strong>Homepage<strong>:  
+  *Brief description</strong>: <em>Badstore.net is dedicated to helping you understand how hackers prey on Web application vulnerabilities, and to showing you how to reduce your exposure. Our Badstore demonstration software is designed to show you common hacking techniques.</em> 
+  <strong>Version/Levels</strong>: 1 (v1.2) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Damn Vulnerable Web App<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Damn Vulnerable Web App (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goals are to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment.</em> 
+  <strong>Version/Levels</strong>: 1 (v1.0.7) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Hacking-Lab<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>This ist the LiveCD project of Hacking-Lab (<a href="http://www.hacking-lab.com/">www.hacking-lab.com</a></em> 
+  <em>The LiveCD gives you OpenVPN access into Hacking-Lab Remote.You will gain VPN access if both of the two pre-requirements are fulfilled.</em> 
+  <strong>Version/Levels</strong>: 1 (v5.30) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: HackUS HackFest Web CTF<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>The Hackfest is an annual event held in Quebec city. For each event, a competition is held where participants competed at solving challenges related to security. For the 2010 edition, I got involved in the competition by creating the web portion of the competition.</em> 
+  <strong>Version/Levels</strong>: 1 (2010) 
+  <strong>Support/Walk-through</strong>:  () 
+  <strong>Name</strong>: Hacme<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Foundstone Hacme Casino™ is a learning platform for secure software development and is targeted at software developers, application penetration testers, software architects, and anyone with an interest in application security.</em> 
+  <strong>Version/Levels</strong>: 5 (2006) 
+  <strong>Support/Walk-through</strong>: , , , ,  
+  <strong>Name</strong>: LAMPSecurity<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Foundstone Hacme Casino™ is a learning platform for secure software development and is targeted at software developers, application penetration testers, software architects, and anyone with an interest in application security.</em> 
+  <strong>Version/Levels</strong>: v6 (4x) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Moth<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Moth is a VMware image with a set of vulnerable Web Applications and scripts, that you may use for:</em> </p>
+  
+  <ol>
+  <li><em>Testing Web Application Security Scanners</em></li>
+  <li><em>Testing Static Code Analysis tools (SCA)</em></li>
+  <li><em>Giving an introductory course to Web Application Security</em></li>
+  </ol>
+  
+  <p><strong>Version/Levels</strong>: v6 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Mutillidae<strong>Homepage</strong>: <em><a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10</a></em> 
+  <strong>Brief description</strong>: <em>Mutillidae: A Deliberately Vulnerable Set Of PHP Scripts That Implement The OWASP Top 10</em> 
+  <strong>Version/Levels</strong>: v1.5 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: Open Web Application Security Project (OWASP) Broken Web Applications Project<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>This project includes applications from various sources (listed in no particular order).</em> 
+  <em>Intentionally Vulnerable Applications:</em> </p>
+  
+  <ul>
+  <li><em><a href="http://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">OWASP WebGoat</a></em></li>
+  <li><em><a href="http://www.owasp.org/index.php/Category:OWASP_Vicnum_Project">OWASP Vicnum</a></em></li>
+  <li><em><a href="http://www.irongeek.com/i.php?page=security/mutillidae-deliberately-vulnerable-php-owasp-top-10">Mutillidae version 1.5</a></em></li>
+  <li><em><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web Application</a></em></li>
+  <li><em><a href="http://webdevelopmentsolutions.org/">Ghost</a></em></li>
+  <li><em><a href="http://peruggia.sourceforge.net/">Peruggia</a></em></li>
+  <li><em><a href="http://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project">OWASP CSRFGuard</a></em></li>
+  <li><em><a href="http://www.owasp.org/index.php/Category:OWASP_AppSensor_Project">OWASP AppSensor Demo Application</a></em></li>
+  <li><em><a href="http://www.mandiant.com/">Mandiant</a></em></li>
+  <li><em>Simple ASP.NET Forms (<a href="http://asp.net/C#">ASP.NET/C#</a></em></li>
+  <li><em>Simple Form with DOM Cross Site Scripting (HTML/JavaScript)</em></li>
+  </ul>
+  
+  <p><em>Old Versions of Real Applications:</em> </p>
+  
+  <ul>
+  <li><em>2.0.0 (PHP, released December 31, 2005, downloaded from <a href="http://www.oldapps.com/Wordpress.php">www.oldapps.com</a></em></li>
+  <li><em>2.0.0 (PHP, released April 4, 2002, downloaded from <a href="http://www.oldapps.com/phpbb.php">www.oldapps.com</a></em></li>
+  <li><em><a href="http://www.forumsoftware.ca/">Yazd</a></em></li>
+  <li><em><a href="http://www.gtd-php/.com">gtd-php</a></em></li>
+  <li><em><a href="http://www.orangehrm.com/">OrangeHRM</a></em></li>
+  <li><em><a href="http://sourceforge.net/projects/getboo/">GetBoo</a></em></li>
+  </ul>
+  
+  <p><strong>Version/Levels</strong>: v0.92rc1 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: SecuriBench<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Stanford SecuriBench is a set of open source real-life programs to be used as a testing ground for static and dynamic security tools. Release .91a focuses on Web-based applications written in Java.</em> 
+  <em>These applications suffer from a variety of vulnerabilities including</em> </p>
+  
+  <ul>
+  <li><em>SQL injection attacks</em></li>
+  <li><em>Cross-site scripting attacks</em></li>
+  <li><em>HTTP splitting attacks</em></li>
+  <li><em>Path traversal attacks</em></li>
+  </ul>
+  
+  <p><strong>Version/Levels</strong>: v0.91a 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: UltimateLAMP<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em><strong>UltimateLAMP</strong> is a fully functional environment allowing you to easily try and evaluate a number of LAMP stack software products without requiring any specific setup or configuration of these products. UltimateLAMP runs as a Virtual Machine with VMware Player (FREE). This demonstration package also enables the recording of all user entered information for later reference, indeed you will find a wealth of information already available within a number of the Product Recommendations starting with the supplied Documentation.</em> 
+  <strong>Version/Levels</strong>: v0.2 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Virtual Hacking Lab<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>A mirror of deliberately insecure applications and old softwares with known vulnerabilities. Used for proof-of-concept /security training/learning purposes. Available in either virtual images or live iso or standalone formats</em> 
+  <strong>Version/Levels</strong>: 1 (2009) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: WackoPicko<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>WackoPicko is a vulnerable web application used to test web application vulnerability scanners.</em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: WebGoat<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>WebGoat is a deliberately insecure J2EE web application maintained by <a href="http://www.owasp.org/">OWASP</a></em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>: , ,  
+  <strong>Name</strong>: WebMaven<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>WebMaven (better known as Buggy Bank) was an interactive learning environment for web application security. It emulated various security flaws for the user to find. This enabled users to safely &amp; legally practice web application vulnerability assessment techniques. In addition, users could benchmark their security audit tools to ensure they perform as advertised.</em> 
+  <strong>Version/Levels</strong>: 1.0.1 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: Web Security Dojo<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>A free open-source self-contained training environment for Web Application Security penetration testing. Tools + Targets = Dojo</em> 
+  <em>Various web application security testing tools and vulnerable web applications were added to a clean install of Ubuntu v10.04.1, which is patched with the appropriate updates and VM additions for easy use.</em> 
+  <em>Version 1.1 includes an exclusive speed-enhanced version of Burp Suite Free. Special thanks to <a href="http://portswigger.net/">PortSwigger</a></em> 
+  <strong>Version/Levels</strong>: 1 
+  <strong>Support/Walk-through</strong>:  
+  <strong>(Online) Web Based 
+  <em>*</em></strong>Name<strong>: Gruyere / jarlsberg</strong>Homepage<strong>:  
+  *Brief description</strong>: <em>This codelab shows how web application vulnerabilities can be exploited and how to defend against these attacks. The best way to learn things is by doing, so you'll get a chance to do some real penetration testing, actually exploiting a real application</em> 
+  <strong>Version/Levels</strong>: 1 (v1.0.7) 
+  <strong>Support/Walk-through</strong>:  
+  <strong>Name</strong>: HackThis<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Welcome to HackThis!!, this site was set up over 2 years ago as a safe place for internet users to learn the art of hacking in a controlled environment, teaching the most common flaws in internet security.</em> 
+  <strong>Version/Levels</strong>: 32 (40?) 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: HackThisSite<strong>Homepage</strong>:  
+  <strong>Brief description</strong>: <em>Hack This Site is a free, safe and legal training ground for hackers to test and expand their hacking skills. More than just another hacker wargames site, we are a living, breathing community with many active projects in development, with a vast selection of hacking articles and a huge forum where users can discuss hacking, network security, and just about everything. Tune in to the hacker underground and get involved with the project.</em> 
+  <strong>Version/Levels</strong>: Lots 
+  <strong>Support/Walk-through</strong>: N/A 
+  <strong>Name</strong>: Vicnum<a href="http://www.hackthissite.org/">http://www.hackthissite.org/</a></p>
+</blockquote>
+
+<p>Taken from :<a href="http://g0tmi1k.blogspot.com/">http://g0tmi1k.blogspot.com</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/h3ct0rjs/" style="background-image: url(http://www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s&amp;)"><span class="hidden">h3ct0rJs's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/h3ct0rjs/">h3ct0rJs</a></h4>
+
+                    <p>Read <a href="../author/h3ct0rjs/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Vulnerable%20by%20Design%20by%20g0tm1lk%20blog's&amp;url=http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/vulnerable_by_design_by_g_0_tm_1_lk_blog_s/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../gamification_of_information_security_pauldotcom_mailist/">
+        <section class="post">
+            <h2>Gamification of Information Security ...Pauldotcom(mailist )</h2>
+            <p>Gamification has been the buzz for the past few years. Game design concepts are appearing in everyday interactions like…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../conociendo_nmap_scripting_engine_nse/">
+        <section class="post">
+            <h2>Conociendo Nmap Scripting Engine (NSE)</h2>
+            <p>Desde Hace Mucho tiempo Nmap es una de las herramientas favoritas que e tenido para realizar mis pentest y…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">c1b3rh4ck's /dev/null</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d34201be84"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d34201be84"></script>
+
+</body>

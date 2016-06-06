@@ -1,0 +1,233 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Problem Restarting Apache2: Solutions</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d34201be84">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="c1b3rh4ck's /dev/null">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Problem Restarting Apache2: Solutions">
+    <meta property="og:description" content="If you're using apache 2 as webserver maybe sometimes you'll have to deal with common problems like vhost, syntax errors,  bad configurations. Sometimes is when you edit a file inside  /etc/apache2/sites-enabled/file.conf and maybe your edition just didn't accomplish with the syntax so here  is how can">
+    <meta property="og:url" content="http://localhost:2368/problem_restarting_apache_2_solutions/">
+    <meta property="article:published_time" content="2016-01-30T06:30:00.000Z">
+    <meta property="article:modified_time" content="2016-01-30T06:30:11.764Z">
+    <meta property="article:tag" content="Unix">
+    <meta property="article:tag" content="Debian">
+    <meta property="article:tag" content="Sysadmin">
+    <meta property="article:tag" content="Webserver">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Problem Restarting Apache2: Solutions">
+    <meta name="twitter:description" content="If you're using apache 2 as webserver maybe sometimes you'll have to deal with common problems like vhost, syntax errors,  bad configurations. Sometimes is when you edit a file inside  /etc/apache2/sites-enabled/file.conf and maybe your edition just didn't accomplish with the syntax so here  is how can">
+    <meta name="twitter:url" content="http://localhost:2368/problem_restarting_apache_2_solutions/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="h3ct0rJs">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Unix, Debian, Sysadmin, Webserver">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "c1b3rh4ck&#x27;s /dev/null",
+        "logo": "http://localhost:2368/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "h3ct0rJs",
+        "image": "//www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s=250&d=mm&r=x",
+        "url": "http://localhost:2368/author/h3ct0rjs/",
+        "sameAs": []
+    },
+    "headline": "Problem Restarting Apache2: Solutions",
+    "url": "http://localhost:2368/problem_restarting_apache_2_solutions/",
+    "datePublished": "2016-01-30T06:30:00.000Z",
+    "dateModified": "2016-01-30T06:30:11.764Z",
+    "keywords": "Unix, Debian, Sysadmin, Webserver",
+    "description": "If you&#x27;re using apache 2 as webserver maybe sometimes you&#x27;ll have to deal with common problems like vhost, syntax errors,  bad configurations. Sometimes is when you edit a file inside  /etc/apache2/sites-enabled/file.conf and maybe your edition just didn&#x27;t accomplish with the syntax so here  is how can"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="c1b3rh4ck's /dev/null" href="../rss/index.html">
+</head>
+<body class="post-template tag-unix tag-debian tag-sysadmin tag-webserver nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-unix tag-debian tag-sysadmin tag-webserver">
+
+        <header class="post-header">
+            <h1 class="post-title">Problem Restarting Apache2: Solutions</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-01-30">30 January 2016</time>  on <a href="../tag/unix/">Unix</a>, <a href="../tag/debian/">Debian</a>, <a href="../tag/sysadmin/">Sysadmin</a>, <a href="../tag/webserver/">Webserver</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>If you're using apache 2 as webserver maybe sometimes you'll have to deal with common problems like vhost, syntax errors,  bad configurations. Sometimes is when you edit a file inside  /etc/apache2/sites-enabled/file.conf and maybe your edition just didn't accomplish with the syntax so here  is how can you check : </p>
+
+<p>1. Make sure that your Apache2 service is up and running. </p>
+
+<pre class="brush:bash">user@~$sudo service apache2 status  
+● apache2.service - LSB: Apache2 web server 
+
+Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled) 
+
+Active: active (running) since Fri 2016-01-29 14:05:16 EST; 14s ago 
+
+Docs: man:systemd-sysv-generator(8) 
+
+Process: 31573 ExecStop=/etc/init.d/apache2 stop (code=exited, status=0/SUCCESS) 
+
+Process: 17063 ExecReload=/etc/init.d/apache2 reload (code=exited, status=0/SUCCESS) 
+
+Process: 30948 ExecStart=/etc/init.d/apache2 start (code=exited, status=0/SUCCESS)  
+
+... 
+</pre>
+
+<p>If this isn't the output, read carefully the error. <br>
+2. Check your <strong>systemctl status</strong>, this will give you a lot of information. </p>
+
+<pre class="brush:bash">user@~$sudo systemctl status apache2.service  
+● apache2.service - LSB: Apache2 web server 
+
+Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled) 
+
+Active: failed (Result: exit-code) since Fri 2016-01-29 13:48:57 EST; 18s ago 
+
+Docs: man:systemd-sysv-generator(8) 
+
+Process: 31573 ExecStop=/etc/init.d/apache2 stop (code=exited, status=0/SUCCESS) 
+
+Process: 17063 ExecReload=/etc/init.d/apache2 reload (code=exited, status=0/SUCCESS) 
+
+Process: 30467 ExecStart=/etc/init.d/apache2 start (code=exited, status=1/FAILURE)  
+</pre>
+
+<p>3. Run the <strong>apache config test</strong>. It is always a good idea to run <strong>configtest</strong> everytime you make changes to the apache2 config file so that you won't accidentally stop apache2 service </p>
+
+<pre class="brush:bash">user@~$ sudo apache2ctl configtest  
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1\. Set the 'ServerName' directive globally to suppress this message  
+Syntax OK  
+</pre>
+
+<p>4. Restart the apache service </p>
+
+<pre class="brush:bash">user@~$ sudo service apache2 stop &amp;&amp; sudo service apache2 start  
+</pre>
+
+<p>References: </p>
+
+<p>[1] 
+[2] 
+<a href="https://www.linode.com/docs/troubleshooting/troubleshooting-common-apache-issues">https://www.linode.com/docs/troubleshooting/troubleshooting-common-apache-issues</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/h3ct0rjs/" style="background-image: url(http://www.gravatar.com/avatar/b815541780fb0fc003dd4e8556fb6115?s&amp;)"><span class="hidden">h3ct0rJs's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/h3ct0rjs/">h3ct0rJs</a></h4>
+
+                    <p>Read <a href="../author/h3ct0rjs/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Problem%20Restarting%20Apache2%3A%20Solutions&amp;url=http://localhost:2368/problem_restarting_apache_2_solutions/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/problem_restarting_apache_2_solutions/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/problem_restarting_apache_2_solutions/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../windows_firewall_react/">
+        <section class="post">
+            <h2>Windows Firewall React!</h2>
+            <p>…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../video_writeup_eff_ctf_2016/">
+        <section class="post">
+            <h2>Video Writeup EFF-CTF 2016</h2>
+            <p>For a while I've been trying to understand a little bit about reversing and low level stuff, sometimes it…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../">c1b3rh4ck's /dev/null</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d34201be84"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d34201be84"></script>
+
+</body>
